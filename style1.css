@@ -1,0 +1,300 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Header Styles */
+header {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    color: #fff;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin-right: 20px;
+}
+
+.navbar li a {
+    color: #fff;
+    font-weight: 600;
+}
+
+/* Home Section Styles */
+.home {
+    background-color: #343a40;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home-text h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.home-text h2 {
+    font-size: 24px;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.home-text p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    color: #fff;
+    border-color: #0056b3; /* Change button border color on hover */
+}
+
+/* About Section Styles */
+.about-container {
+    background-color: #007bff; /* Change background color to vibrant blue */
+    color: #fff; /* Change text color to white */
+    padding: 100px 20px;
+    text-align: center;
+}
+
+
+.about-img img {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add subtle shadow to the image */
+}
+
+.about-text {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.information {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.info-box {
+    margin: 0 20px;
+}
+
+
+.info-box i {
+    font-size: 24px;
+    color: #fff; /* Change icon color to white */
+}
+
+
+.info-box span {
+    display: block;
+    margin-top: 5px;
+    color: #fff; /* Change text color to white */
+}
+
+.info-box span:last-child {
+    font-size: 14px;
+}
+
+.btn {
+    margin-top: 30px;
+    background-color: #fff; /* Change button background color to white */
+    color: #007bff; /* Change button text color to blue */
+    border: 2px solid #fff; /* Add white border to the button */
+}
+/* Skills Section Styles */
+.skills {
+    background-color: #f8f9fa;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.bars {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.bars-box {
+    width: 20%;
+}
+
+.bars-box h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.bar {
+    background-color: #007bff;
+    height: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Portfolio Section Styles */
+.portfolio {
+    background-color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.portfolio-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+    justify-items: center;
+    margin-top: 50px;
+}
+
+.work__img {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s ease;
+    width: 100%;
+    padding: 20px;
+    padding-left: 30px;
+    
+}
+.work__img img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.work__img:hover {
+    transform: translateY(-10px);
+}
+
+.card-img-top {
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card-img-top:hover {
+    transform: scale(1.05);
+}
+
+.card-title {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.card-text {
+    font-size: 18px;
+}
+
+/* Contact Section Styles */
+.contact {
+    background-color: #343a40;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #eee;
+}
+
+.contact-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer-social a {
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+/* Copyright Styles */
+.copyright {
+    background-color: #343a40;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+.skill-points {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.skill-points li {
+    margin-bottom: 5px;
+}
